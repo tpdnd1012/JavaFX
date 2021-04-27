@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="397.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Findidcontroller">
+   <children>
+      <ImageView fitHeight="199.0" fitWidth="177.0" layoutX="113.0" layoutY="7.0">
+         <image>
+            <Image url="@로고.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="findname" layoutX="113.0" layoutY="269.0" prefHeight="27.0" prefWidth="177.0" promptText="Name" />
+      <TextField fx:id="findpnumber" layoutX="113.0" layoutY="312.0" prefHeight="27.0" prefWidth="177.0" promptText="Phone Number" />
+      <Button fx:id="btnfindid" layoutX="110.0" layoutY="363.0" mnemonicParsing="false" onAction="#findidAction" prefHeight="34.0" prefWidth="177.0" style="-fx-background-color: ffffff;" text="Find ID">
+         <font>
+            <Font name="Apple LiSung Light" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="163.0" layoutY="206.0" prefHeight="34.0" prefWidth="103.0" text="Find ID" textFill="#8a1758">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnback" layoutX="176.0" layoutY="397.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: ffffff;" text="Back">
+         <font>
+            <Font name="Apple LiSung Light" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

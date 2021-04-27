@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="489.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Informationcontroller">
+   <children>
+      <Label layoutX="9.0" layoutY="9.0" prefHeight="29.0" prefWidth="117.0" text="Chatting">
+         <font>
+            <Font name="Maku Regular" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="76.0" layoutX="122.0" layoutY="4.0">
+         <image>
+            <Image url="@로고.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="logid" layoutX="341.0" layoutY="25.0" prefHeight="25.0" prefWidth="141.0" />
+      <AnchorPane layoutY="488.0" prefHeight="64.0" prefWidth="496.0">
+         <children>
+            <Button fx:id="btnchatting" layoutX="34.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: ffffff;" text="Chatting" textFill="#a14895">
+               <font>
+                  <Font name="Menlo Regular" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnlogout" layoutX="393.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutAction" style="-fx-background-color: ffffff;" text="Logout" textFill="#80367c">
+               <font>
+                  <Font name="Menlo Regular" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btninformation" layoutX="156.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: ffffff;" text="Information" textFill="#8f3e94">
+               <font>
+                  <Font name="Menlo Regular" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btndelete" layoutX="293.0" layoutY="19.0" mnemonicParsing="false" onAction="#deleteAction" style="-fx-background-color: ffffff;" text="Delete" textFill="#974da1">
+               <font>
+                  <Font name="Menlo Regular" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Line endX="388.0" layoutX="101.0" layoutY="74.0" startX="-100.0" />
+      <Line endX="387.0" layoutX="102.0" layoutY="488.0" startX="-102.0" />
+      <Label layoutX="169.0" layoutY="80.0" text="Information" textFill="#92399a">
+         <font>
+            <Font name="Menlo Regular" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="134.0" layoutY="165.0" text="ID">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="208.0" text="Name">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="118.0" layoutY="250.0" text="Gender">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="291.0" text="Age">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="330.0" text="Phone Number">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="375.0" text="Job">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtid" layoutX="290.0" layoutY="165.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtname" layoutX="290.0" layoutY="208.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtgender" layoutX="290.0" layoutY="250.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtage" layoutX="290.0" layoutY="291.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtpnumber" layoutX="290.0" layoutY="330.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtjob" layoutX="290.0" layoutY="375.0" prefHeight="17.0" prefWidth="117.0">
+         <font>
+            <Font name="Menlo Regular" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnmodify" layoutX="187.0" layoutY="435.0" mnemonicParsing="false" onAction="#modifyAction" prefHeight="27.0" prefWidth="123.0" style="-fx-background-color: ffffff;" text="Modify">
+         <font>
+            <Font name="Menlo Regular" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

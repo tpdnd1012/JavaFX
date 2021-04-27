@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="742.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.listupdatecontroller">
+   <children>
+      <AnchorPane prefHeight="426.0" prefWidth="215.0" style="-fx-background-color: FFE4E1;">
+         <children>
+            <Label layoutX="39.0" layoutY="14.0" prefHeight="46.0" prefWidth="143.0" text="WEDDING">
+               <font>
+                  <Font name="Arial Narrow" size="34.0" />
+               </font>
+            </Label>
+            <Button fx:id="btninsert" layoutX="53.0" layoutY="127.0" mnemonicParsing="false" onAction="#insertAction" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: FFE4E1;" text="Member Insert" />
+            <Button fx:id="btnlogout" layoutX="52.0" layoutY="317.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: FFE4E1;" text="Logout" />
+            <Button fx:id="btnchatting" layoutX="53.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: FFE4E1;" text="Chatting" />
+            <Button fx:id="btnlist" layoutX="53.0" layoutY="168.0" mnemonicParsing="false" onAction="#listAction" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: FFE4E1;" text="Member List" />
+            <Button fx:id="btninformation" layoutX="46.0" layoutY="278.0" mnemonicParsing="false" onAction="#informationAction" prefHeight="30.0" prefWidth="129.0" style="-fx-background-color: FFE4E1;" text="Member Information" />
+            <Line endX="100.0" layoutX="108.0" layoutY="71.0" startX="-100.0" />
+            <Button fx:id="btnupdate" layoutX="53.0" layoutY="207.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="30.0" prefWidth="116.0" style="-fx-background-color: FFE4E1;" text="Member Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="215.0" prefHeight="72.0" prefWidth="527.0" style="-fx-background-color: FFE4E1;">
+         <children>
+            <Label fx:id="logid" layoutX="411.0" layoutY="21.0" prefHeight="30.0" prefWidth="116.0" />
+         </children>
+      </AnchorPane>
+      <RadioButton fx:id="man" layoutX="397.0" layoutY="120.0" mnemonicParsing="false" text="Man">
+         <toggleGroup>
+            <ToggleGroup fx:id="a" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="woman" layoutX="479.0" layoutY="120.0" mnemonicParsing="false" text="Woman" toggleGroup="$a" />
+      <Label layoutX="278.0" layoutY="121.0" prefHeight="14.0" prefWidth="56.0" text="Gender" />
+      <Label layoutX="279.0" layoutY="174.0" text="Name" />
+      <Label layoutX="286.0" layoutY="254.0" text="Tel" />
+      <Label layoutX="286.0" layoutY="300.0" text="Job" />
+      <TextField fx:id="txtname" layoutX="397.0" layoutY="170.0" />
+      <TextField fx:id="txttel" layoutX="397.0" layoutY="250.0" />
+      <TextField fx:id="txtjob" layoutX="397.0" layoutY="296.0" />
+      <Button fx:id="btnlistupdate" layoutX="495.0" layoutY="358.0" mnemonicParsing="false" onAction="#listupdate" prefHeight="22.0" prefWidth="70.0" style="-fx-background-color: ffffff;" text="Update" />
+      <Line endX="196.0" layoutX="379.0" layoutY="347.0" startX="-100.0" />
+      <Line endX="196.0" layoutX="377.0" layoutY="106.0" startX="-100.0" />
+      <Label layoutX="285.0" layoutY="213.0" text="Age" />
+      <TextField fx:id="txtage" layoutX="397.0" layoutY="210.0" />
+   </children>
+</AnchorPane>
